@@ -72,7 +72,7 @@
 	screen_loc = "LEFT,TOP-3"
 	letters_per_update = 1
 	fade_out_delay = 1 SECONDS
-	style_open = "<span class='langchat_notification' style='text-align:center; color: #c0f7ff;' valign='top'>" //SS220 Fonts
+	style_open = "<span class='langchat_notification' style='text-align:center; color: #c0f7ff; line-height: 1.8em; vertical-align: top;'>" //SS220 EDIT
 	style_close = "</span>"
 
 /atom/movable/screen/text/screen_text/hypersleep_status/Initialize(mapload)
