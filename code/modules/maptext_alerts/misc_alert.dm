@@ -72,8 +72,8 @@
 	screen_loc = "LEFT,TOP-3"
 	letters_per_update = 1
 	fade_out_delay = 1 SECONDS
-	style_open = "<span class='langchat_notification' style='text-align:center; color: #c0f7ff; line-height: 1.8em; vertical-align: top;'>" //SS220 EDIT
-	style_close = "</span>"
+	style_open = "<span class='langchat_notification' style='text-align:center; color: #c0f7ff; line-height: 1.8em; vertical-align: top; font-family: \"DejaVu Sans\", \"Noto Sans\", sans-serif;'>"
+	style_close = "</span>" // SS220 Edit
 
 /atom/movable/screen/text/screen_text/hypersleep_status/Initialize(mapload)
 	. = ..()
@@ -82,23 +82,19 @@
 /atom/movable/screen/text/screen_text/directed_by
 	layer = INTRO_LAYER
 	plane = INTRO_PLANE
-	screen_loc = "WEST:6,1:5"
-	style_open = "<span class='langchat_notification' style=text-align:left valign='top'>" //SS220 Fonts
+	screen_loc = "WEST:6,TOP:5"  // Исправлено: WEST:6,TOP:5 вместо WEST:6,1:5
+	style_open = "<span class='langchat_notification' style='text-align:left; vertical-align: top; font-family: \"DejaVu Sans\", \"Noto Sans\", sans-serif;'>"
 	style_close = "</span>"
-	maptext_x = 32
+	// maptext_x = 32  // УДАЛИТЬ — не нужен при screen_loc
 
 /atom/movable/screen/text/screen_text/potrait
-	screen_loc = "LEFT,TOP-3"
-	maptext_height = 64
-	maptext_width = 400
-	maptext_x = 66
-	maptext_y = 0
+	screen_loc = "LEFT:0,TOP:3"
 	letters_per_update = 2
 	fade_out_delay = 10 SECONDS
 	layer = INTRO_LAYER
 	plane = INTRO_PLANE
-	style_open = "<span class='langchat_notification' style=text-align:left valign='top'>" //SS220 Fonts
-	style_close = "</span>"
+	style_open = "<span class='langchat_notification' style='text-align:left; vertical-align: top; font-family: \"DejaVu Sans\", \"Noto Sans\", sans-serif;'>"
+	style_close = "</span>" // SS220 Edit
 
 /atom/movable/screen/text/screen_text/potrait/Initialize(mapload, datum/hud/hud_owner, name, icon_to_use, image_to_play)
 	. = ..()
