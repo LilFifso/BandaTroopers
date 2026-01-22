@@ -1660,7 +1660,7 @@
 /mob/living/carbon/human/proc/play_opening_sequence()
 	if(SSticker.intro_sequence)
 		sleeping = 11
-		addtimer(CALLBACK(src, PROC_REF(play_screen_text), "СОСТОЯНИЕ ГИБЕРНАЦИИ<br><br>СТАТУС СИСТЕМЫ<br>СИСТЕМА ЖИЗНЕОБЕСПЕЧЕНИЯ:ОНЛАЙН<br>СИСТЕМА РАЗМОРОЗКИ:ОНЛАЙН<br>ИММУНИЗАЦИЯ:ВЫПОЛНЕНА<br>СОСТОЯНИЕ ЧЕЛОВЕКА:СТАБИЛЬНО", /atom/movable/screen/text/screen_text/hypersleep_status), 1.25 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(play_screen_text), "СОСТОЯНИЕ ГИБЕРНАЦИИ<br><br>СТАТУС СИСТЕМЫ<br>СИСТЕМА ЖИЗНЕОБЕСПЕЧЕНИЯ:ОНЛАЙН<br>СИСТЕМА РАЗМОРОЗКИ:ОНЛАЙН<br>ИММУНИЗАЦИЯ:ВЫПОЛНЕНА<br>СОСТОЯНИЕ ЧЕЛОВЕКА:СТАБИЛЬНО", /atom/movable/screen/text/screen_text/hypersleep_status), 1.25 SECONDS) //SS220 EDIT
 		addtimer(CALLBACK(src, PROC_REF(play_manifest)), 13 SECONDS)
 		overlay_fullscreen_timer(13 SECONDS, 10, "roundstart1", /atom/movable/screen/fullscreen/black)
 		overlay_fullscreen_timer(13 SECONDS, 10, "roundstartcrt1", /atom/movable/screen/fullscreen/crt)
